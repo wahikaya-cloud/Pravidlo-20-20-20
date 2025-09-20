@@ -10,7 +10,7 @@ const countdownDisplay = document.getElementById('countdown');
 const startAnimation = document.getElementById('start-animation'); // Nový element
 
 function startTimer() {
-let timeLeft = 20 * 60; // 20 minut v sekundách
+let timeLeft = 1 * 60; // změna na 1 minuta v sekundách
 updateTimerDisplay(timeLeft);
 
 // Zobrazení animace na začátku
@@ -22,7 +22,7 @@ updateTimerDisplay(timeLeft);
 
 if (timeLeft <= 0) {
 showModal();
-timeLeft = 20 * 60; // Reset na 20 minut
+timeLeft = 1 * 60; // Reset na 1 minutu
 }
 }, 1000);
 }
